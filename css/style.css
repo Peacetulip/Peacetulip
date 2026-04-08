@@ -92,7 +92,15 @@ img {
 .sidebar a:hover {
   background: var(--color-grey-hover);
 }
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 
+  .content {
+    margin-left: 0;
+  }
+}
 /* =========================================================
    MAIN CONTENT WRAPPER
    ========================================================= */
