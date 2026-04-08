@@ -12,6 +12,9 @@
   <!-- Eigen CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
+<script src="js/menu.js"></script>
+
 <body>
 
   <!-- Sidebar -->
@@ -23,8 +26,7 @@
     </div>
 
   <!-- Navigatie -->
-<!-- Navigatie -->
- <nav>
+  <nav>
       <a href="index.html" class="w3-bar-item w3-button w3-teal">Home</a>
       <a href="over-peacetulip.html" class="w3-bar-item w3-button w3-teal">Over Peacetulip</a>
       <a href="missie-visie.html" class="w3-bar-item w3-button w3-teal">Missie &amp; Visie</a>
@@ -35,59 +37,114 @@
       <a href="contact.html" class="w3-bar-item w3-button w3-teal">Contact</a>
     </nav>
 </aside>
-
-
-
   <!-- Hoofdinhoud -->
-  <main id="main">
-
+  
+<main id="main">
     <!-- Header -->
-    <header class="w3-container w3-teal header-title">
+     <header>
+  <!-- bestaande content -->
+
+  <div class="mobile-menu">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+    <div id="menu-links" class="menu-links">
+      <a href="index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+      <a href="over-peacetulip.html" class="w3-bar-item w3-button w3-teal">Over Peacetulip</a>
+      <a href="missie-visie.html" class="w3-bar-item w3-button w3-teal">Missie &amp; Visie</a>
+	  <a href="kernwaarden.html" class="w3-bar-item w3-button w3-teal">Kernwaarden</a>
+      <a href="universele-rechtscode.html" class="w3-bar-item w3-button w3-teal"><strong>Universele Rechtscode</strong></a>
+      <a href="educatief-materiaal.html" class="w3-bar-item w3-button w3-teal">Educatief materiaal</a>
+      <a href="educatieve-voorbeelden.html" class="w3-bar-item w3-button w3-teal">Educatieve voorbeelden</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-teal">Contact</a>
+    </div>
+  </div>
+  
+    <!-- Header -->
+    </header>
+   <header class="w3-container w3-teal header-title">
       <i class="fas fa-book-open" aria-hidden="true"></i>
       <h1>Educatief Materiaal</h1>
     </header>
+  
+    <!-- Hoofdinhoud -->
+	<!-- Page content -->
+  <div style="margin: left 260px;">
+
 
 <section class="w3-container">
      <div class="w3-container">
      <p><strong>1. Economie in dienst van rechtvaardigheid</strong></p>
   <p> Boeken die de verbanden tussen economie, rechtvaardigheid en maatschappelijke verantwoordelijkheid belichten zijn:</p>
     <table class="w3-table-all">
-    <tr><th>Schrijver</th><th>Titel</th><th>Uitgever</th></tr>
-    <td>Kate Raworth</td><td><Doughnut Economics></td><td>Random House</td></tr>
-    <td>Thomas Piketty</td><tdKapitaal in de enentwintigste eeuw></td><td>
-Harvard University Press</td></tr>
-    <td>Amartya Sen</td><td><Ontwikkeling als vrijheid</td><td>Oxford Universitry Press</td></tr>
+  <tr>
+    <th>Schrijver</th>
+    <th>Titel</th>
+    <th>Uitgever</th>
+  </tr>
+
+  <tr>
+    <td>Kate Raworth</td>
+    <td>Doughnut Economics</td>
+    <td>Random House</td>
+  </tr>
+
+  <tr>
+    <td>Thomas Piketty</td>
+    <td>Kapitaal in de eenentwintigste eeuw</td>
+    <td>Harvard University Press</td>
+  </tr>
+
+  <tr>
+    <td>Amartya Sen</td>
+    <td>Ontwikkeling als vrijheid</td>
+    <td>Oxford University Press</td>
+  </tr>
 </table>
   
      <p><strong>2. Culturele verschillen omarmen in plaats van bestrijden</strong></p>
   <p>De volgende werken benadrukken het belang van intercultureel begrip en samenwerking:</p>
     <table class="w3-table-all">
-    <tr><th>Schrijver</th><th>Titel</th><th>Uitgever</th></tr>
-    <td> Edward T. Hall </td><td> The Silent Language </td><td> Doubleday </td></tr>
-    <td>Hofstede et al </td><td> Cultures and Organizations: Software of the Mind </td><td>McGraw-Hill </td></tr>
-    <td>Kwame Anthony Appiah</td><td> Cosmopolitanism: Ethics in a World of Strangers </td><td> W.W. Norton </td></tr>
+    <tr>
+    <th>Schrijver</th>
+    <th>Titel</th>
+    <th>Uitgever</th>
+  </tr>
+  <tr>
+    <th>Edward T. Hall</th>
+    <th>The Silent Language</th>
+    <th>Doubleday</th>
+  </tr>
+  <tr>
+    <th>Geert Hofstede et al.</th>
+    <th>Cultures and Organizations: Software of the Mind</th>
+    <th>McGraw-Hill</th>
+  </tr>
+  <tr>
+    <th>Fons Trompenaars</th>
+    <th>Riding the Waves of Culture</th>
+    <th>McGraw-Hill</th>
+  </tr>
 </table>
 
-     <p><strong>3. Religieuze en filosofische harmonie </strong></p>
+<p><strong>3. Religieuze en filosofische harmonie </strong></p>
   <p> Boeken die religieuze en filosofische tradities met elkaar in dialoog brengen en bruggen slaan tussen verschillende wereldbeelden:</p>
     <table class="w3-table-all">
     <tr><th>Schrijver</th><th>Titel</th><th>Uitgever</th></tr>
     <td> Raimon Panikkar</td><td>The Rhythm of Being</td><td> Orbis Books </td></tr>
-    <td> Karen Armstrong </td><td>The Case for God</td><td>
-Knopf </td></tr>
+    <td> Karen Armstrong </td><td>The Case for God</td><td> Knopf </td></tr>
     <td>Alan Watts</td><td>The Book: On the Taboo Against Knowing Who You Are</td><td> Vintage ress</td></tr>
 </table>
 
-     <p><strong>4. Geluk </strong></p>
-  <p> Deze boeken onderzoeken geluk als levensdoel, zowel psychologisch als sociaal:</p>
+<p><strong>4. Geluk </strong></p>
+<p> Deze boeken onderzoeken geluk als levensdoel, zowel psychologisch als sociaal:</p>
     <table class="w3-table-all">
     <tr><th>Schrijver</th><th>Titel</th><th>Uitgever</th></tr>
     <td> Matthieu Ricard </td><td> Geluk: Een gids voor het ontwikkelen van de belangrijkste vaardigheid in het leven </td><td> Little, Brown </td></tr>
     <td> Dalai Lama & Howard Cutler </td><td> De kunst van het geluk </td><td> Riverhead Books </td></tr>
     <td> Daniel Kahneman </td><td> Denken, snel en langzaam </td><td> Farrar, Straus and Giroux </td></tr>
-</table>
+    </table>
 
-     <p><strong>5. Onderwijs als middel tot zelfontplooiing </strong></p>
+    <strong>5. Onderwijs als middel tot zelfontplooiing </strong></p>
   <p> Boeken over onderwijs, emancipatie en kritisch bewustzijn:</p>
     <table class="w3-table-all">
     <tr><th>Schrijver</th><th>Titel</th><th>Uitgever</th></tr>
@@ -96,7 +153,7 @@ Knopf </td></tr>
     <td> Ken Robinson </td><td> Out of Our Minds </td><td> Capstone </td></tr>
 </table>
 
-     <p><strong>6. Ecologische verantwoordelijkheid </strong></p>
+<p><strong>6. Ecologische verantwoordelijkheid </strong></p>
   <p> Boeken die zich richten op duurzame ontwikkeling en onze verantwoordelijkheid voor de aarde:</p>
     <table class="w3-table-all">
     <tr><th>Schrijver</th><th>Titel</th><th>Uitgever</th></tr>
@@ -104,6 +161,8 @@ Knopf </td></tr>
     <td>Rachel Carson</td><td> Silent Spring</td><td>Houghton Mifflin</td></tr>
     <td>James Lovelock</td><td> Out of Our Minds </td><td>Oxford University Press </td></tr>
 </table>
+      </div>
+      </section>
 
 
    <footer class="footer">

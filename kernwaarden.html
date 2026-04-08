@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body
+<body>
 
   <!-- Sidebar -->
   <aside class="w3-sidebar w3-light-grey w3-bar-block sidebar">
@@ -23,7 +23,6 @@
       </a>
     </div>
 
-  <!-- Navigatie -->
  <!-- Navigatie -->
  <nav>
       <a href="index.html" class="w3-bar-item w3-button w3-teal">Home</a>
@@ -36,13 +35,28 @@
       <a href="contact.html" class="w3-bar-item w3-button w3-teal">Contact</a>
     </nav>
 </aside>
-
-
-
-
   <!-- Hoofdinhoud -->
-  <main id="main">
+  
+<main id="main">
+    <!-- Header -->
+     <header>
+  <!-- bestaande content -->
 
+  <div class="mobile-menu">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+    <div id="menu-links" class="menu-links">
+      <a href="index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+      <a href="over-peacetulip.html" class="w3-bar-item w3-button w3-teal">Over Peacetulip</a>
+      <a href="missie-visie.html" class="w3-bar-item w3-button w3-teal">Missie &amp; Visie</a>
+	  <a href="kernwaarden.html" class="w3-bar-item w3-button w3-teal">Kernwaarden</a>
+      <a href="universele-rechtscode.html" class="w3-bar-item w3-button w3-teal"><strong>Universele Rechtscode</strong></a>
+      <a href="educatief-materiaal.html" class="w3-bar-item w3-button w3-teal">Educatief materiaal</a>
+      <a href="educatieve-voorbeelden.html" class="w3-bar-item w3-button w3-teal">Educatieve voorbeelden</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-teal">Contact</a>
+    </div>
+  </div>
+</header>
     <!-- Header -->
     <header class="w3-container w3-teal header-title">
       <i class="fas fa-gem" aria-hidden="true"></i>
@@ -92,5 +106,6 @@
   <img class="footer-logo" src="images/thehaguelogo.png" alt="Den Haag logo" />
 </footer>
   </main>
+<script src="js/menu.js"></script>
 </body>
 </html>
