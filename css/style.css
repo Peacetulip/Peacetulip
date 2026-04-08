@@ -101,6 +101,19 @@ img {
     margin-left: 0;
   }
 }
+.menu-links {
+  display: none;
+  flex-direction: column;
+}
+
+.menu-links.show {
+  display: flex;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
 /* =========================================================
    MAIN CONTENT WRAPPER
    ========================================================= */
