@@ -19,7 +19,20 @@
   --shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   --max-content-width: 960px;
 }
+:root {
+    --main-green: #2E7D32;
+}
+.main-green {
+    background-color: var(--main-green);
+    color: white;
+}
 
+.header-title {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 /* ------------------------------
    Basis / Reset
 ------------------------------ */
@@ -71,7 +84,18 @@ img {
   text-align: center;
   margin-bottom: 16px;
 }
+.sidebar nav a {
+    display: block;
+    background-color: #2E7D32;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
 
+.sidebar nav a {
+    background-color: #2E7D32;
+}
+}
 .sidebar .logo img {
   width: 120px;
   margin: 0 auto;
@@ -114,15 +138,6 @@ img {
   font-size: 24px;
   cursor: pointer;
 }
-@media (min-width: 768px) {
-  .sidebar {
-    display: block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
 /* =========================================================
    MAIN CONTENT WRAPPER
    ========================================================= */
@@ -135,7 +150,7 @@ img {
    HEADER
    ========================================================= */
 .header-title {
-  background: var(--color-accent);
+  background: #2E7D32;
   color: white;
   padding: 14px 20px;
   border-radius: var(--radius);
