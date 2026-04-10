@@ -114,12 +114,21 @@ img {
   font-size: 24px;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .sidebar {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
 /* =========================================================
    MAIN CONTENT WRAPPER
    ========================================================= */
 #main {
   margin-left: var(--sidebar-width);
-  padding: 24px;
+  padding: 0 24px 24px 24px;
 }
 
 /* =========================================================
