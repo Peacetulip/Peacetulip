@@ -19,9 +19,24 @@
   --shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   --max-content-width: 960px;
 }
+
 :root {
-    --main-green: #2E7D32;
+  --color-primary: #89AD97;
+  --color-primary-dark: #6f8f7c;
+  --color-primary-light: #a8c4b3;
 }
+body {
+  background-color: var(--color-primary-light);
+}
+
+.sidebar {
+  background-color: var(--color-primary);
+}
+
+footer {
+  background-color: var(--color-primary-dark);
+}
+
 .main-green {
     background-color: var(--main-green);
     color: white;
@@ -125,12 +140,12 @@ img {
     margin-left: 0;
   }
 }
-.menu-links {
+#menu-links {
   display: none;
   flex-direction: column;
 }
 
-.menu-links.show {
+#menu-links.show {
   display: flex;
 }
 
