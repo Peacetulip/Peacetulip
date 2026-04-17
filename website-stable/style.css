@@ -1,0 +1,224 @@
+/* =========================================================
+   Peacetulip Global Stylesheet
+   Schoon, consistent en uitbreidbaar
+   ========================================================= */
+
+/* ------------------------------
+   CSS-variabelen
+------------------------------ */
+:root {
+  --sidebar-width: 260px;
+  --color-bg: #f7f7f7;
+  --color-white: #ffffff;
+  --color-text: #333;
+  --color-accent: #008080;  /* Teal (W3CSS accent) */
+  --color-grey-light: #f0f0f0;
+  --color-grey-hover: #e6e6e6;
+
+  --radius: 10px;
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  --max-content-width: 960px;
+}
+
+/* ------------------------------
+   Basis / Reset
+------------------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Afbeeldingen — ALTIJD responsive
+------------------------------ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--color-grey-light);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 20px 16px;
+  z-index: 10;
+}
+
+/* Logo in sidebar */
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.sidebar .logo img {
+  width: 120px;
+  margin: 0 auto;
+}
+
+/* Sidebar navigatie */
+.sidebar a {
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.sidebar a:hover {
+  background: var(--color-grey-hover);
+}
+
+/* =========================================================
+   MAIN CONTENT WRAPPER
+   ========================================================= */
+#main {
+  margin-left: var(--sidebar-width);
+  padding: 24px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.header-title {
+  background: var(--color-accent);
+  color: white;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-title i {
+  font-size: 1.4rem;
+}
+
+.header-title h1 {
+  font-size: clamp(22px, 2.8vw, 36px);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   CONTENT BLOCKS
+   ========================================================= */
+.content {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  background: var(--color-white);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Lijsten */
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-list li {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer {
+  max-width: var(--max-content-width);
+  margin: 30px auto 0;
+  background: var(--color-white);
+  padding: 18px 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.footer-logo {
+  max-height: 80px;
+  width: auto;
+  margin-top: 8px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  max-height: 100px;
+  margin-top: 8px;
+}
+.footer {
+  background: #f2f6fa;
+}
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  :root {
+    --sidebar-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Sidebar niet fixed op mobiel */
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .sidebar a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .content,
+  .footer {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .header-title {
+    justify-content: center;
+  }
+}
